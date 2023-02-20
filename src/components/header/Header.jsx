@@ -3,7 +3,7 @@ import { Image } from "react-bootstrap"
 import logo from "../assets/nba-logo.png"
 const Header = ({setSearch}) => {
   const handleSearch = (e)=>{
-    setSearch(e.target.value)
+    setSearch(e.target.value.trim())
   }
   
   return (
